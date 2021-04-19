@@ -10,10 +10,13 @@ export default createGlobalStyle`
   html, body {
     height: 100%;
     width: 100%;
+
+    font-family: 'futura-pt'
   }
 
   :root {
     font-size: 10px;
+    overflow: hidden;
   }
 
   button, a {
