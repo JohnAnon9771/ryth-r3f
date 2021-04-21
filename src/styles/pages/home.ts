@@ -1,38 +1,56 @@
 import styled from 'styled-components'
 
-export const BlackBar = styled.div<{
-  top?: boolean
-  footer?: boolean
-  translateY?: string
-}>`
-  position: absolute;
-  top: ${props => (props.top ? 0 : 'auto')};
-  bottom: ${props => (props.footer ? 0 : 'auto')};
-  height: 12vh;
-  width: 100vw;
-  transition: all 200ms;
-  animation: ${props => (props.top ? 'showAnimatedTop' : 'showAnimatedBottom')}
-    1s ease-out;
-
-  background-color: black;
-
-  ${props =>
-    props.top
-      ? '@keyframes showAnimatedTop'
-      : '@keyframes showAnimatedBottom'} {
-    0% {
-      transform: translateY(${props => props.translateY});
-    }
-
-    100% {
-      transform: translateY(0px);
-    }
-  }
-`
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   height: 100vh;
+
+  .bar {
+    position: fixed;
+
+    background-color: black;
+
+    height: 50vh;
+    width: 100vw;
+
+    transition: 0.3s ease-out;
+    z-index: 10;
+  }
+
+  .top {
+    top: 0;
+  }
+  .bottom {
+    bottom: 0;
+  }
+
+  .titles {
+    display: grid;
+    place-items: center;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    pointer-events: none;
+
+    color: #3d5257;
+
+    .page-title {
+      font-size: 5vw;
+      letter-spacing: 2.6vw;
+
+      text-indent: 2.6vw;
+
+      font-weight: 100;
+    }
+    .sub-title {
+      font-size: 1vw;
+
+      letter-spacing: 1.8vw;
+      text-indent: 1.8vw;
+    }
+  }
 `

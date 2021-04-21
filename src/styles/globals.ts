@@ -11,7 +11,7 @@ export default createGlobalStyle`
     height: 100%;
     width: 100%;
 
-    font-family: 'futura-pt'
+    font-family: 'futura-pt', 'sans-serif';
   }
 
   :root {
@@ -21,6 +21,10 @@ export default createGlobalStyle`
 
   button, a {
     cursor: pointer
+  }
+
+  a {
+    text-decoration: none;
   }
 
   input, textarea {
