@@ -28,15 +28,20 @@ export const Container = styled.div`
   }
 
   .titles {
+    position: absolute;
+
     display: grid;
     place-items: center;
+
+    width: 100vw;
 
     text-transform: uppercase;
     text-align: center;
 
     pointer-events: none;
+    user-select: none;
 
-    color: #3d5257;
+    color: rgba(255, 255, 255, 0.8);
 
     .page-title {
       font-size: 5vw;

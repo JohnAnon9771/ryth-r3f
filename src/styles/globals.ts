@@ -7,16 +7,44 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html, body {
+  html, body, canvas {
     height: 100%;
     width: 100%;
 
-    font-family: 'futura-pt', 'sans-serif';
+    font-family: 'Times New Roman', Times, serif;
   }
 
   :root {
     font-size: 10px;
-    overflow: hidden;
+  }
+
+  .hide {
+    height: 0vh;
+    min-height: 0;
+  }
+
+  
+  .bar {
+    position: fixed;
+
+    background-color: black;
+
+    height: 50vh;
+    width: 100vw;
+
+    transition: 0.3s ease-out;
+    z-index: 10;
+    @media only screen and (max-width:801px) {
+      display: none;
+    }
+  }
+
+  .top {
+    top: 0;
+  }
+  
+  .bottom {
+    bottom: 0;
   }
 
   button, a {
