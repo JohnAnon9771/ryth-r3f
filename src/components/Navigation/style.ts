@@ -16,7 +16,7 @@ export const Container = styled.nav`
     display: inline-block;
 
     text-transform: uppercase;
-    color: #3d5257;
+    color: white;
     letter-spacing: 0.2vw;
     font-size: 1vw;
     text-indent: 0.2vw;
@@ -27,5 +27,8 @@ export const Container = styled.nav`
     padding-left: 4vw;
 
     user-select: none;
+    @media only screen and (max-width: 801px) {
+      font-size: 3vw;
+    }
   }
 `
