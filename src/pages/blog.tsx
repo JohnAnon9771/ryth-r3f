@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import * as S from 'styles/globals'
 
 import {Navigation} from 'components'
@@ -5,6 +7,9 @@ import {Navigation} from 'components'
 export default function Blog(): JSX.Element {
   return (
     <>
+      <Head>
+        <title>Blog | Ryth Solutions</title>
+      </Head>
       <S.Wrapper>
         <S.Title>
           <p className="page-title">Blog</p>
