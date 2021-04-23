@@ -56,6 +56,10 @@ export const Container = styled.div`
 
       letter-spacing: 1.8vw;
       text-indent: 1.8vw;
+
+      @media only screen and (max-width: 801px) {
+        font-size: 2vw;
+      }
     }
   }
 `
