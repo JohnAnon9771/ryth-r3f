@@ -70,12 +70,12 @@ const nextConfig =
 module.exports = composePlugins(
   [
     withOffline,
-    // withPWA({
-    //   pwa: {
-    //     dest: 'public',
-    //     runtimeCaching,
-    //   },
-    // }),
+    withPWA({
+      pwa: {
+        dest: 'public',
+        runtimeCaching,
+      },
+    }),
   ],
   nextConfig
 )
