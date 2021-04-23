@@ -20,6 +20,9 @@ export default function Bars({position}: Props): JSX.Element {
     from: {
       transform: 'translateY(0px)',
     },
+    config: {
+      duration: 0.5,
+    },
   })
 
   return <animated.div className={`bar ${position}`} style={{transform}} />
