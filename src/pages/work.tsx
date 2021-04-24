@@ -2,8 +2,6 @@ import Head from 'next/head'
 
 import * as S from 'styles/globals'
 
-import {Navigation} from 'components'
-
 export default function Work(): JSX.Element {
   return (
     <>
@@ -18,7 +16,6 @@ export default function Work(): JSX.Element {
           </p>
         </S.Title>
       </S.Wrapper>
-      <Navigation isHome={false} />
     </>
   )
 }

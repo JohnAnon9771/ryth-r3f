@@ -43,6 +43,7 @@ export const NavigationOtherPages = styled.nav`
 
   span {
     color: white;
+    user-select: none;
   }
 
   @media only screen and (max-width: 801px) {
@@ -56,13 +57,13 @@ export const NavigationOtherPages = styled.nav`
 
 export const NavigationHome = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   position: absolute;
   bottom: 15vh;
 
-  width: 50vw;
+  width: 100vw;
 
   margin-top: 10vh;
 
@@ -76,6 +77,7 @@ export const NavigationHome = styled.nav`
     text-indent: 0.2vw;
 
     opacity: 0.5;
+    padding: 0 6vw;
 
     user-select: none;
 

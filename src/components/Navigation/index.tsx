@@ -1,15 +1,13 @@
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 
 import * as S from './style'
 
-interface Props {
-  isHome: boolean
-}
-
-export default function Navigation({isHome}: Props): JSX.Element {
+export default function Navigation(): JSX.Element {
+  const router = useRouter()
   return (
     <>
-      {isHome ? (
+      {router.route === '/' ? (
         <S.NavigationHome>
           <Link href="/work">
             <a>Work</a>

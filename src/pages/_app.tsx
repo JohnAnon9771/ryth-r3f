@@ -3,7 +3,7 @@ import {AppProps} from 'next/app'
 import {Canvas} from '@react-three/fiber'
 import GlobalStyle from 'styles/globals'
 
-import {Bars, Dots} from 'components'
+import {Bars, Dots, Navigation} from 'components'
 
 export default function MyApp({Component, pageProps}: AppProps): JSX.Element {
   return (
@@ -20,6 +20,7 @@ export default function MyApp({Component, pageProps}: AppProps): JSX.Element {
       </Canvas>
       <Bars position="top" />
       <Component {...pageProps} />
+      <Navigation />
       <Bars position="bottom" />
       <GlobalStyle />
     </>
